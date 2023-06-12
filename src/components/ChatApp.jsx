@@ -7,10 +7,11 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   margin-left:250px;
   margin-right:250px;
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding:50px;
   `;
 
 const Card = styled.div`
@@ -64,18 +65,23 @@ function App() {
 
   const submit = async (e) => {
     e.preventDefault();
-
-    await fetch('http://localhost:8000/api/messages', {
+  
+    const response = await fetch('http://localhost:8000/api/messages', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         username,
-        message
-      })
+        message,
+      }),
     });
-
-    setMessage('');
+  
+    const data = await response.json();
+  
+    if (data.success) {
+      setMessage('');
+    }
   };
+  
 
   return (
     <Container>
