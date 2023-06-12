@@ -2,15 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 280px;
-  background-color: #36393f;
-  color: #fff;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content:center;
   height: 90vh; 
   position: fixed;
   margin-top:25px;
+  width:20vh;
 `;
 
 const Header = styled.div`
@@ -40,7 +40,7 @@ const ContactName = styled.span`
 `;
 
 const Sidebar = () => {
-  const contacts = ["John", "Jane", "Mike", "Emily"];
+  const contacts = ["Marwan", "Autres"];
 
   const handleContactClick = (contact) => {
     console.log("Clicked on contact:", contact);
@@ -52,7 +52,7 @@ const Sidebar = () => {
       <ContactList>
         {contacts.map((contact, index) => (
           <ContactItem key={index} onClick={() => handleContactClick(contact)}>
-            <span>#</span>
+            <span>🧑‍💻</span>
             <ContactName>{contact}</ContactName>
           </ContactItem>
         ))}

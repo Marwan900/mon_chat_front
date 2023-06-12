@@ -2,27 +2,27 @@ import React, { useEffect, useState } from "react";
 import Pusher from "pusher-js";
 import styled from "styled-components";
 
+
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: azure;
   margin-left:250px;
   margin-right:250px;
-  background-image: url('public\black-abstract-background-wallpaper-image.jpg');
-`;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  `;
 
 const Card = styled.div`
-  width: 400px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  box-shadow:10px;
 `;
 
 const Input = styled.input`
-  width: 100%;
+  width: 90%;
   margin-bottom: 20px;
   padding: 10px;
   font-size: 1rem;
@@ -101,7 +101,7 @@ function App() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
-          <button type="submit">Send</button>
+          <button type="submit">Envoyer !</button>
         </form>
       </Card>
     </Container>
