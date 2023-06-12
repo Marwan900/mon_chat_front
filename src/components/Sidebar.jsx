@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: #D3CCE3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: black;
   display: flex;
   flex-direction: column;
@@ -11,6 +13,14 @@ const Container = styled.div`
   position: fixed;
   margin-top:25px;
   width:20vh;
+  box-shadow: 1px 1px 0px #999;
+  2px 2px 0px #999,
+  3px 3px 0px #999,
+  4px 4px 0px #999,
+  5px 5px 0px #999,
+  6px 6px 0px #999;
+  
+  font-family: "Lucida Console", "Courier New", monospace;
 `;
 
 const Header = styled.div`
@@ -31,7 +41,7 @@ const ContactItem = styled.div`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #202225;
+    background-color: purple;
   }
 `;
 

@@ -7,20 +7,26 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  margin-left:250px;
-  margin-right:250px;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  padding:50px;
+  height: 95vh;
+  background: #D3CCE3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding:50px,
   `;
 
 const Card = styled.div`
+  font-family: "Lucida Console", "Courier New", monospace;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  box-shadow:10px;
-`;
+  box-shadow: 1px 1px 0px #999;
+  2px 2px 0px #999,
+  3px 3px 0px #999,
+  4px 4px 0px #999,
+  5px 5px 0px #999,
+  6px 6px 0px #999;
+  `;
 
 const Input = styled.input`
   width: 90%;
