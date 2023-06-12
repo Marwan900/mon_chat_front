@@ -7,7 +7,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f1f1f1;
+  background-color: azure;
+  margin-left:250px;
+  margin-right:250px;
+  background-image: url('public\black-abstract-background-wallpaper-image.jpg');
 `;
 
 const Card = styled.div`
