@@ -3,8 +3,8 @@ Il est développé en utilisant ReactJS et intègre les fonctionnalités de comm
 
 Installation
 Assurez-vous d'avoir Node.js installé sur votre machine.
-Clonez ce dépôt : git clone https://github.com/votre-utilisateur/votre-projet-front.git
-Accédez au répertoire du projet : cd votre-projet-front
+Clonez ce dépôt : git clone 
+Accédez au répertoire du projet : cd 
 Installez les dépendances : npm install
 
 Utilisation
